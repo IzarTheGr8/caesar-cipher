@@ -7,7 +7,7 @@ def caesar_cipher(input, shift = 0)
     if letter_index
       new_letter_index = letter_index + shift
       new_letter_index -= ALPHABET.length unless new_letter_index < ALPHABET.length
-      letter == letter.upcase ? letter = ALPHABET[new_letter_index].upcase : letter = ALPHABET[new_letter_index]
+      letter == letter.upcase ? ALPHABET[new_letter_index].upcase : ALPHABET[new_letter_index]
     else
       letter
     end
