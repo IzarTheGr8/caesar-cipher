@@ -1,4 +1,6 @@
-ALPHABET = ("a".."z").to_a
+# frozen_string_literal: true
+
+ALPHABET = ('a'..'z').to_a
 
 def caesar_cipher(input, shift = 0)
   input.each_char.map do |letter|
